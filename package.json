@@ -17,6 +17,9 @@
     "react-redux": "^7.2.3",
     "react-scripts": "4.0.3",
     "react-sortable-hoc": "^2.0.0",
+    "react-sortablejs": "^6.0.0",
+    "redux-persist": "^6.0.0",
+    "sortablejs": "^1.13.0",
     "typesafe-actions": "^5.1.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
@@ -44,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/sortablejs": "^1.10.6"
   }
 }

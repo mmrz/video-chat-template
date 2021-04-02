@@ -1,8 +1,6 @@
-import { makeStyles, Theme } from '@material-ui/core/styles';
-type StyleProps = {
-  numberOfColsAndRow: number;
-}
-export const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
+import { makeStyles } from '@material-ui/core/styles';
+
+export const useStyles = makeStyles({
   videoWrapper: {
     width: '100%',
     height: '100%',
@@ -22,8 +20,5 @@ export const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
     flexDirection: 'column',
     justifyContent: 'space-between'
   },
-  videoBoxWrapper: {
-    padding: theme.spacing(.5),
-    height: ({numberOfColsAndRow}) => `${100 / numberOfColsAndRow}%`
-  }
-}))
+
+})

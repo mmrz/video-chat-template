@@ -7,14 +7,12 @@ import { useStyles } from "./videoBox.style";
 interface VideoBoxProps {
   user: User,
   onDeleteUser: () => void;
-  listLength: number;
 }
 
-const VideoBox: FC<VideoBoxProps> = ({ user: {name, image}, onDeleteUser, listLength }) => {
-  const numberOfColsAndRow = Math.ceil(Math.sqrt(listLength));
-  const classes = useStyles({numberOfColsAndRow});
+const VideoBox: FC<VideoBoxProps> = ({ user: {name, image}, onDeleteUser }) => {
+  const classes = useStyles();
   return (
-    <Box className={classes.videoBoxWrapper}>
+    
     <Box className={classes.videoWrapper}>
       <img 
         className={classes.video} 
@@ -36,7 +34,7 @@ const VideoBox: FC<VideoBoxProps> = ({ user: {name, image}, onDeleteUser, listLe
         </Box>
       </Box>
     </Box>
-    </Box>
+
   )
 }
 

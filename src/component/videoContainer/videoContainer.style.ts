@@ -1,6 +1,10 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles((theme) => ({
+type StyleProps = {
+  numberOfColsAndRow: number;
+}
+
+export const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
   chatSection: {
     display: 'flex',
     justifyContent: 'center',
@@ -10,4 +14,8 @@ export const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     margin: theme.spacing(0, 1)
   },
+  videoBoxWrapper: {
+    padding: theme.spacing(.5),
+    height: ({numberOfColsAndRow}) => `${100 / numberOfColsAndRow}%`
+  }
 }))
