@@ -31,3 +31,15 @@ export const changeOrders = (userList: User[]): UserAction => {
     payload: userList
   }
 }
+
+export const reset = (): UserAction => {
+  return {
+    type: UserActionType.RESE
+  }
+}
+
+export const shuffle = (): UserAction => {
+  return {
+    type: UserActionType.SHUFFLE
+  }
+}

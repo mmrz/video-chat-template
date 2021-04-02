@@ -9,13 +9,20 @@ export const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '85vh',
     flexWrap: 'wrap',
     overflow: 'hidden',
     margin: theme.spacing(0, 1)
   },
+  check: {
+    height: '85vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden',
+  },
   videoBoxWrapper: {
     padding: theme.spacing(.5),
-    height: ({numberOfColsAndRow}) => `${100 / numberOfColsAndRow}%`
+    height: ({numberOfColsAndRow}) => `calc(85vh / ${numberOfColsAndRow})`,
+    minWidth: '100px'
   }
 }))

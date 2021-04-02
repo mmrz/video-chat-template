@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: 'linear-gradient(to top, transparent 0%, black 100%)',
+    background: 'linear-gradient(to top, transparent 0%, #0000007d 100%)',
   },
   iconWrapper: {
     margin: theme.spacing(0, 1),

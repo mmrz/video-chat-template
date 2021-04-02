@@ -11,12 +11,12 @@ import Loader from './component/loader/Loader';
 function App() {
   return (
     <Provider store={store}>
-    <PersistGate loading={<Loader />} persistor={persistor}>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Room />
-    </ThemeProvider>
-    </PersistGate>
+      <PersistGate loading={<Loader />} persistor={persistor}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Room />
+        </ThemeProvider>
+      </PersistGate>
     </Provider>
   );
 }

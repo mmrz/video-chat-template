@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   videoWrapper: {
     width: '100%',
     height: '100%',
@@ -20,5 +20,16 @@ export const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'space-between'
   },
+  deleteButton: {
+    backgroundColor: '#0000004d',
+    margin: theme.spacing(.5),
+    '&:hover': {
+      backgroundColor: '#00000091',
+    }
+  },
+  nameChip: {
+    backgroundColor: '#0000004d',
+    border: 'none'
+  }
 
-})
+}))

@@ -1,6 +1,6 @@
-import { UserAction, User, UserActionType } from "./type";
+import { UserAction, User, UserActionType, UserState } from "./type";
 
-const initailState: User[] = [
+const initailState: UserState = [
   {
     name: "Mike",
     id: Date.now(),
@@ -8,7 +8,7 @@ const initailState: User[] = [
   }
 ]
 
-const userReducer = (state: User[] = initailState, {type, payload}: UserAction): User[] => {
+const userReducer = (state: UserState = initailState, {type, payload}: UserAction): UserState => {
   switch(type) {
     case UserActionType.ADD_NEW_USER:
       return [...state, (payload as User)];
@@ -16,6 +16,10 @@ const userReducer = (state: User[] = initailState, {type, payload}: UserAction):
       return state.filter(user => user.id !== (payload as User).id);
     case UserActionType.CHANGE_ORDERS:
       return (payload as User[]);
+    case UserActionType.RESE:
+      return initailState
+    case UserActionType.SHUFFLE:
+      return [...state].sort(() => Math.random() - 0.5)
     default:
       return state;
   }
