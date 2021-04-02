@@ -17,7 +17,7 @@ The chat page should not have any kind of overflow and you could see all the vid
 ###### Persist data:
 This problem solved with `redux-persist` package you can find the document above.
 
-##### Reordering with drag and drop:
+###### Reordering with drag and drop:
 
 The video tiles can be reordered by drag. `react-sortablejs` in this task. Note that we mutate the entire state after each reordering. 
 # Getting Started with Create React App
