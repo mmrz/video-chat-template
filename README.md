@@ -1,3 +1,25 @@
+# Video Chat Template
+
+This project created with React.js.
+
+Main packages used by this project:
+
+- [Redux](https://redux.js.org/)
+- [react-sortablejs](https://github.com/SortableJS/react-sortablejs)
+- [redux-persist](https://github.com/rt2zz/redux-persist)
+- [Materail UI](https://material-ui.com/)
+
+##### Problems that solved in this project:
+
+###### One-page:
+The chat page should not have any kind of overflow and you could see all the videos in on-page. So in this project, I've decided to show the video tile's in a shape of square matrix.
+  
+###### Persist data:
+This problem solved with `redux-persist` package you can find the document above.
+
+##### Reordering with drag and drop:
+
+The video tiles can be reordered by drag. `react-sortablejs` in this task. Note that we mutate the entire state after each reordering. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
